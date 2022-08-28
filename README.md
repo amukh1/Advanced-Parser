@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/virtual_machine_builder.svg)](https://www.npmjs.com/package/virtual_machine_builder)
+[![npm version](https://badge.fury.io/js/advanced-parser.svg)](https://www.npmjs.com/package/advanced-parser)
 
 # Advanced-Parser
 
@@ -35,21 +35,21 @@ These instructions will get you a copy of the project up and running on your loc
 To install and set up the library, run:
 
 ```sh
-$ npm install virtual_machine_builder
+$ npm install advanced-parser
 ```
 
 Or if you prefer using Yarn:
 
 ```sh
-$ yarn add --dev virtual_machine_builder
+$ yarn add --dev advanced-parser
 ```
 
 <!-- ## There is also a vscode extension:
-**[Extension Link](https://marketplace.visualstudio.com/items?itemName=amukh1.ritchie)**
+**[Extension Link](https://marketplace.visualstudio.com/items?itemName=amukh1.advanced-parser)**
 
-**Or  just search up "virtual_machine_builder" in the extensions section**
+**Or  just search up "advanced-parser" in the extensions section**
 
-![img](./virtual_machine_builder.png) -->
+![img](./advanced-parser.png) -->
 
 ## Usage
 <br>
@@ -70,7 +70,7 @@ object.property.method()
 
 ## Contributing
 
-You can contribute to the project by making a pull request on [GitHub](https://github.com/amukh1/virtual_machine_builder).
+You can contribute to the project by making a pull request on [GitHub](https://github.com/amukh1/advanced-parser).
 
 ## Credits
 
@@ -86,7 +86,7 @@ You can contribute to the project by making a pull request on [GitHub](https://g
 
 * **Amukh1** - [Github](https://github.com/amukh1)
 
-See also the list of [contributors](https://github.com/amukh1/virtual_machine_builder/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/amukh1/advanced-parser/contributors) who participated in this project.
 
 ## License
 
