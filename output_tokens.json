@@ -1,0 +1,45 @@
+[
+	{
+		"type": "NUMBER",
+		"value": "14"
+	},
+	{
+		"type": "OBJECT-REFRENCE",
+		"value": "var.hello.e"
+	},
+	{
+		"type": "NUMBER",
+		"value": "4"
+	},
+	{
+		"type": "WORD",
+		"value": "hello"
+	},
+	{
+		"type": "PLUS",
+		"value": "+"
+	},
+	{
+		"type": "NUMBER",
+		"value": "1"
+	},
+	{
+		"type": "FUNCTION-DEF",
+		"name": "f",
+		"args": "x",
+		"body": [
+			"{\"type\":\"RETURN\",\"value\":\"return 2x8;\\n\"}",
+			"{\"type\":\"NUMBER\",\"value\":\"17\"}",
+			"{\"type\":\"RETURN\",\"value\":\"return 16;\\n\"}",
+			"{\"type\":\"C-BRACE\",\"value\":\"}\"}"
+		]
+	},
+	{
+		"type": "NUMBER",
+		"value": "16"
+	},
+	{
+		"type": "EOF",
+		"value": ""
+	}
+]
