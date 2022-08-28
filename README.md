@@ -66,6 +66,53 @@ hello
 object.property.method()
 ```
 
+## Parsed to:
+
+```json
+[
+	{
+		"type": "FUNCTION-DEF",
+		"name": "f",
+		"args": "x",
+		"body": [
+			"{\"type\":\"WORD\",\"value\":\"return\"}",
+			"{\"type\":\"NUMBER\",\"value\":\"2\"}",
+			"{\"type\":\"MULTIPLY\",\"value\":\"*\"}",
+			"{\"type\":\"WORD\",\"value\":\"x\"}",
+			"{\"type\":\"C-BRACE\",\"value\":\"}\"}"
+		]
+	},
+	{
+		"type": "NUMBER",
+		"value": "16"
+	},
+	{
+		"type": "WORD",
+		"value": "hello"
+	},
+	{
+		"type": "STRING",
+		"value": "string"
+	},
+	{
+		"type": "OBJECT-REFRENCE",
+		"value": "object.property.method"
+	},
+	{
+		"type": "O-PAREN",
+		"value": "("
+	},
+	{
+		"type": "WORD",
+		"value": "x"
+	},
+	{
+		"type": "C-PAREN",
+		"value": ")"
+	}
+]
+```
+
 <br>
 
 ## Contributing
