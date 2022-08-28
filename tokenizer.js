@@ -110,6 +110,8 @@ class Tokenizer {
 
                 if(tokenValue.includes('(')){
                     ref = 'Method'
+                }else {
+                    ref = 'Value'
                 }
 
                 if(tokenValue.includes('(') && (tokenValue.includes(')') == false)){

@@ -23,6 +23,6 @@
 	{
 		"type": "OBJECT-REFRENCE",
 		"refrenceType": "Method",
-		"value": "object.property.method(x)"
+		"value": "object.property.method()"
 	}
 ]

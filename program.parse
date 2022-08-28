@@ -5,4 +5,4 @@ def f(x) = {
 hello
 "string"
 // comment
-object.property.method(x)
+object.property.method()
