@@ -29,7 +29,7 @@ const tokens = [
         // . for objects
         [/^([a-zA-Z.]+)\.([a-zA-Z.]+)/, 'OBJECT-REFRENCE'],
         // word
-        [/^[a-zA-Z]+/, 'WORD'],
+        [/^[a-zA-Z]*/, 'WORD'],
 ];
 
 class Tokenizer {

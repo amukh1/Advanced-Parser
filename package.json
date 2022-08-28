@@ -1,0 +1,28 @@
+{
+  "name": "advanced-parser",
+  "version": "1.0.1",
+  "description": "A parser for a future programming language",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amukh1/Advanced-Parser.git"
+  },
+  "keywords": [
+    "Parser",
+    "node",
+    "js",
+    "nodejs",
+    "language-dev",
+    "language",
+    "dev"
+  ],
+  "author": "amukh1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amukh1/Advanced-Parser/issues"
+  },
+  "homepage": "https://github.com/amukh1/Advanced-Parser#readme"
+}

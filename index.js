@@ -4,15 +4,7 @@ const fs = require('fs');
 
 const parser = new Parser();
 const tokenizer = new Tokenizer();
-tokenizer._init(`14;
-var.hello.e 4;
-hello + 1;
-def f(x) = {
-    return 2x8;
-    17;
-    return 16;
-}
-16;`);
+tokenizer._init(fs.readFileSync('./program.parse', 'utf8'));
 // console.log(tokenizer.getNextToken());
 // console.log(tokenizer.getNextToken());
 let tokens = tokenizer.Tokenize();
