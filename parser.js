@@ -1,6 +1,9 @@
 class Parser {
     parse(tokens){
-        return tokens;
+        return {
+            type: "Program",
+            body: tokens
+        };
     };
 };
 

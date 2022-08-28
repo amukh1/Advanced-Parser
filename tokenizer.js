@@ -27,9 +27,9 @@ const tokens = [
         // // modulo
         // [/%/, 'MODULO'],
         // . for objects
-        [/^([a-zA-Z.]+)\.([a-zA-Z.]+)/, 'OBJECT-REFRENCE'],
+        [/^([a-zA-Z.]+)\.([a-zA-Z.\(\)]+)/, 'OBJECT-REFRENCE'],
         // word
-        [/^[a-zA-Z]*/, 'WORD'], 
+        [/^([a-zA-Z]+)/, 'WORD'], 
 ];
 
 class Tokenizer {
@@ -105,14 +105,30 @@ class Tokenizer {
                     value: tokenValue.slice(7),
                     body: tokenValue3,
                 }
+            }else if(tokenType == 'OBJECT-REFRENCE'){
+                let ref = ''
+
+                if(tokenValue.includes('(')){
+                    ref = 'Method'
+                }
+
+                if(tokenValue.includes('(') && (tokenValue.includes(')') == false)){
+                    throw new SyntaxError(`Unexpected end of input: "${string[0 + string.indexOf('(')]}" at line ${this._string.slice(0, this._cursor).split('\n').length}, position: ${this._cursor - 1}`)
+                }
+
+                return {
+                    type: tokenType,
+                    refrenceType: ref,
+                    value: tokenValue,
+                }
             }
-           
+            // console.log(string[0].match(/^([a-zA-Z]*)/))
             return {
                 type: tokenType,
                 value: tokenValue,
             }
         }
-        // console.log('thisfar')
+        console.log('thisfar')
         throw new SyntaxError(`Unexpected token: "${string[0]}" at line ${this._string.slice(0, this._cursor).split('\n').length}, position: ${this._cursor - 1}`);
     }
     _match(regexp, string){

@@ -1,9 +1,5 @@
 [
 	{
-		"type": "NUMBER",
-		"value": "4"
-	},
-	{
 		"type": "FUNCTION-DEF",
 		"name": "f",
 		"args": "x",
@@ -26,18 +22,7 @@
 	},
 	{
 		"type": "OBJECT-REFRENCE",
-		"value": "object.property.method"
-	},
-	{
-		"type": "O-PAREN",
-		"value": "("
-	},
-	{
-		"type": "WORD",
-		"value": "x"
-	},
-	{
-		"type": "C-PAREN",
-		"value": ")"
+		"refrenceType": "Method",
+		"value": "object.property.method(x)"
 	}
 ]
