@@ -16,12 +16,12 @@ const tokens = [
         // functions
         [/^def(.*)=.{/, 'FUNCTION-DEF'],
         // return statement
-        [/^return(.*)\n/, 'RETURN'],
+        [/^return(.*)/, 'RETURN'],
         // operators
-        [/^\+/, 'PLUS'], 
-        [/^-/, 'MINUS'], 
+        [/^(.*)\+(.*)/, 'PLUS'], 
+        [/^(.*)-(.*)/, 'MINUS'], 
         [/^\*/, 'MULTIPLY'], 
-        [/^\//, 'DIVIDE'], 
+        [/^(.*)\/(.*)/, 'DIVIDE'], 
         [/^\(/, 'O-PAREN'], 
         [/^\)/, 'C-PAREN'],
         // // modulo
@@ -29,7 +29,7 @@ const tokens = [
         // . for objects
         [/^([a-zA-Z.]+)\.([a-zA-Z.]+)/, 'OBJECT-REFRENCE'],
         // word
-        [/^[a-zA-Z]*/, 'WORD'],
+        [/^[a-zA-Z]*/, 'WORD'], 
 ];
 
 class Tokenizer {
@@ -95,16 +95,18 @@ class Tokenizer {
                     args: tokenValue.slice(tokenValue.indexOf('(') + 1, tokenValue.indexOf(')')),
                     body: val,
                 }
+            }else if(tokenType == 'RETURN'){
+                var tokenizer3 = new Tokenizer();
+                tokenizer3._init(tokenValue.slice(7));
+                let tokenValue3 = tokenizer3.Tokenize();
+                // console.log(tokenValue3);
+                return {
+                    type: tokenType,
+                    value: tokenValue.slice(7),
+                    body: tokenValue3,
+                }
             }
-            // if(string[0] == '^'){
-            //     throw new SyntaxError(`Unexpected token: "${string[0]}"`);
-            // }
-            // this._cursor += tokenValue.length;
-            // console.log(tokenValue)
-            // console.log(tokenType)
-            // if(typeof(tokenType) !== 'string'){
-            //     throw new SyntaxError(`Unexpected token: "${string[0]}"`);
-            // }
+           
             return {
                 type: tokenType,
                 value: tokenValue,
