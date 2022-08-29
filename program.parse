@@ -1,7 +1,7 @@
 def f(x) = {
     return 2*x
 }
-16
+f(12)
 hello
 "string"
 // comment
