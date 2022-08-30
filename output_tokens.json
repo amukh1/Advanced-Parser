@@ -2,23 +2,28 @@
 	"type": "Program",
 	"body": [
 		{
-			"type": "Number",
-			"value": 1
+			"type": "NUMBER",
+			"value": "1"
 		},
 		{
-			"type": "Plus",
-			"left": {
-				"type": "Number",
-				"value": 1
-			},
-			"right": {
-				"type": "Number",
-				"value": 2
-			}
+			"type": "PLUS",
+			"value": "+"
 		},
 		{
-			"type": "Number",
-			"value": 1
+			"type": "NUMBER",
+			"value": "2"
+		},
+		{
+			"type": "NUMBER",
+			"value": "2"
+		},
+		{
+			"type": "PLUS",
+			"value": "+"
+		},
+		{
+			"type": "NUMBER",
+			"value": "1"
 		}
 	]
 }

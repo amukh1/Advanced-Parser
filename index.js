@@ -9,5 +9,5 @@ tokenizer._init(fs.readFileSync('./test.parse', 'utf8'));
 // console.log(tokenizer.getNextToken());
 let tokens = tokenizer.Tokenize();
 let x = parser.parse(tokens)
-console.log(x.body[1]);
+console.log(x);
 fs.writeFileSync('output_tokens.json', JSON.stringify(x, null, '\t'));
