@@ -123,7 +123,7 @@ object.property.method()
 
 Graphical representation of the AST:
 
-[![img](./ast.png)](./ast.png)
+![img](https://i.imgur.com/F5R4Tzj.png)
 
 <br>
 
