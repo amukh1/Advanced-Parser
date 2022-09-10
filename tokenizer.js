@@ -38,6 +38,9 @@ const tokens = [
     [/^\./, 'PERIOD'],
   [/^\,/, 'COMMA'],
     // word
+    // [/^(ASM{).*(})/gs, 'ASM'],
+    [/^(ASM *{).*(})/gs, 'ASM'],
+    // []
     [/^([a-zA-Z]+)/, 'WORD'], 
 ];
 

@@ -26,23 +26,8 @@
 			]
 		},
 		{
-			"type": "OBJECT-REFRENCE",
-			"depth": 1,
-			"parent": "object",
-			"children": [
-				"refrence"
-			]
-		},
-		{
-			"type": "OBJECT-REFRENCE",
-			"depth": 2,
-			"parent": "object",
-			"children": [
-				"property",
-				"method",
-				"(",
-				")"
-			]
+			"type": "ASM",
+			"body": "ASM{\r\nmov edx,ecx\r\nmov ecx,edx\r\n}"
 		}
 	]
 }

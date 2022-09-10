@@ -3,7 +3,12 @@ function f(x) {
 }
 f(12);
 hello;
+// comment
+
+ASM {
+mov edx,ecx
+mov ecx,edx
+}
+
+//
 "string";
-// comment;
-object.refrence;
-object.property.method();
