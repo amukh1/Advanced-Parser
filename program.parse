@@ -1,8 +1,9 @@
-def f(x) = {
-    return 2*x
+function f(x) {
+    return 2*x;
 }
-f(12)
-hello
-"string"
-// comment
-object.property.method()
+f(12);
+hello;
+"string";
+// comment;
+object.refrence;
+object.property.method();

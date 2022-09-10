@@ -2,7 +2,7 @@ const tokens = [
     // whitespace
     [/^\s+/, null],
     // semicolon
-    [/^;/, null],
+    [/^;/, 'SEMI'],
     // comments
     [/^\/\/.*/, null],
     // multiline comments
@@ -19,6 +19,7 @@ const tokens = [
     // return statement
     // word "def"
     [/^def/, 'FUNCTION-DEF'],
+    [/^function/, 'FUNCTION-DEF'],
     [/^return/, 'RETURN'],
     // operators
     // assignment
@@ -35,6 +36,7 @@ const tokens = [
     // [/^([a-zA-Z.]+)\.([a-zA-Z.\(\)]+)/, 'OBJECT-REFRENCE'],
     // period
     [/^\./, 'PERIOD'],
+  [/^\,/, 'COMMA'],
     // word
     [/^([a-zA-Z]+)/, 'WORD'], 
 ];
