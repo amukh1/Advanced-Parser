@@ -69,48 +69,54 @@ object.property.method()
 ## Parsed to:
 
 ```json
-[
-	{
-		"type": "FUNCTION-DEF",
-		"name": "f",
-		"args": "x",
-		"body": [
-			"{\"type\":\"WORD\",\"value\":\"return\"}",
-			"{\"type\":\"NUMBER\",\"value\":\"2\"}",
-			"{\"type\":\"MULTIPLY\",\"value\":\"*\"}",
-			"{\"type\":\"WORD\",\"value\":\"x\"}",
-			"{\"type\":\"C-BRACE\",\"value\":\"}\"}"
-		]
-	},
-	{
-		"type": "NUMBER",
-		"value": "16"
-	},
-	{
-		"type": "WORD",
-		"value": "hello"
-	},
-	{
-		"type": "STRING",
-		"value": "string"
-	},
-	{
-		"type": "OBJECT-REFRENCE",
-		"value": "object.property.method"
-	},
-	{
-		"type": "O-PAREN",
-		"value": "("
-	},
-	{
-		"type": "WORD",
-		"value": "x"
-	},
-	{
-		"type": "C-PAREN",
-		"value": ")"
-	}
-]
+{
+	"type": "Program",
+	"body": [
+		{
+			"type": "FUNCTION-DEF",
+			"name": "f",
+			"args": [
+				"x"
+			],
+			"body": [
+				{
+					"type": "RETURN STATEMENT",
+					"body": [
+						"2",
+						"*",
+						"x"
+					]
+				}
+			]
+		},
+		{
+			"type": "FUNCTION-CALL",
+			"name": "f",
+			"params": [
+				"12"
+			]
+		},
+		{
+			"type": "OBJECT-REFRENCE",
+			"depth": 1,
+			"parent": "object",
+			"children": [
+				"refrence"
+			]
+		},
+		{
+			"type": "OBJECT-REFRENCE",
+			"depth": 2,
+			"parent": "object",
+			"children": [
+				"property",
+				"method",
+				"(",
+				")"
+			]
+		}
+	]
+}
 ```
 
 <br>
