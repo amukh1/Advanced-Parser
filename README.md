@@ -121,6 +121,12 @@ object.property.method()
 
 <br>
 
+Graphical representation of the AST:
+
+[![img](./ast.png)](./ast.png)
+
+<br>
+
 ## Contributing
 
 You can contribute to the project by making a pull request on [GitHub](https://github.com/amukh1/advanced-parser).
